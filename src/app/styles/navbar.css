@@ -1,0 +1,148 @@
+/* Navbar Container */
+.navbar-container {
+    position: fixed;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+   margin-right: auto;
+    width: 100%;
+    background-color: rgb(121, 140, 159);
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1280px) {
+    .navbar-container {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-family: cursive;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link a {
+    font-size: 1rem;
+    font-weight: 900;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-link a:hover {
+    color: rgb(38, 63, 88);
+}
+
+/* Menu Icon */
+.navbar-menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: whitesmoke;
+    padding: 0.5rem; /* Adds spacing around icon */
+    margin-left: auto; /* Aligns the icon to the right on small screens */
+}
+
+/* Hide links on smaller screens */
+@media (max-width: 1024px) {
+    .navbar-links {
+        display: none; /* Hide main links on medium and smaller screens */
+    }
+
+    .navbar-menu-icon {
+        display: block; /* Show menu icon */
+    }
+
+    /* Show links as a dropdown when menu is open */
+    .navbar-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position below navbar */
+        left: 0;
+        right: 0;
+        background-color: rgb(121, 140, 159);
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .navbar-link a {
+        font-size: 1.25rem;
+        text-align: center;
+        color: whitesmoke;
+    }
+}
+
+@media (max-width: 786px){
+    /* Larger Screen (Tablet 768px - 1024px) */
+   .navbar-container {
+width: 100%;
+padding: 0;
+   }
+}
+
+
+
+
+
+/* Mobile View (320px and up) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-menu-icon {
+        font-size: 1.25rem;
+        padding: 0.5rem 1rem; /* Adjusts spacing on mobile for comfort */
+    }
+    
+    .navbar-links.open {
+        padding: 1rem 0;
+    }
+}
+
+/* Larger Screen (Tablet 768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .navbar-container {
+        padding-bottom: 1rem;
+    }
+    .navbar-brand {
+        font-size: 1.75rem;
+    }
+
+    .navbar-menu-icon {
+        font-size: 1.5rem;
+    }
+    
+    .navbar-links.open {
+        padding: 1rem;
+    }
+}

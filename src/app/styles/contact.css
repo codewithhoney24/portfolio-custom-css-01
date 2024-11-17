@@ -1,0 +1,160 @@
+/* General styles */
+
+
+    
+.contact-container {
+    margin: 0 auto; /* Center horizontally */
+    padding: 100px 20px 100px 20px; /* Add top padding to separate from navbar */
+    position: relative; /* For background positioning */
+    overflow: visible; /* Allow content to flow outside */
+}
+
+
+.bak-img {
+    position: absolute;
+    background-image: url('/contact-bg.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.bak-img img {
+    opacity: 0.2;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/* Responsive Grid */
+.contact-grid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* Headings and Text */
+.contact-heading {
+    background-color: #294c60;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.contact-text {
+    color: white;
+    font-size: 1.125rem;
+    padding-top: 0.5rem;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+/* Flex Containers */
+.contact-flex,
+.contact-flex1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Space Between Blocks */
+.contact-space {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-field, .textarea-field {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #294c60;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+}
+
+
+
+
+.textarea-field {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.button {
+position: absolute;
+top:85%;
+    background-color: rgb(104, 118, 133);
+    color: white;
+    overflow: visible;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(55, 74, 93);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .contact-heading {
+        font-size: 2rem;
+    }
+
+    .contact-text {
+        font-size: 1rem;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-heading {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-heading {
+        font-size: 1.5rem;
+    }
+
+    .contact-text {
+        font-size: 0.875rem;
+    }
+
+    .button {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+}

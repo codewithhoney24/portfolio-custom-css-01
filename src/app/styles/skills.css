@@ -1,0 +1,525 @@
+.skills-left {
+    min-height: 100vh;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative; /* Ensure pseudo-elements are positioned relative to this container */
+}
+.skills-grid{
+    margin-right:8rem ;
+    margin-left: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 6rem;
+align-items: center;
+    
+}
+
+.skills-left::before,
+.skills-left::after {
+    content: '';
+    position: absolute;
+    height: 45%;
+    width: 90%;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 1;
+    padding: 0.5px;
+    border: 2px solid whitesmoke; /* Solid border color */
+    animation: spin 3s linear infinite;
+}
+
+.skills-left::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+/* Add the .skills-text class for text size */
+.skills-text {
+    padding-top: 20px;
+    font-size:14px;
+    color: #6b7280;  /* Optional text color */
+}
+/* Change text color to white on hover */
+.skills-text:hover {
+    color: white;
+}
+.skills-heading{
+    background-color: slategray;
+    font-weight: inherit;
+    margin: 0;
+    font-size: 3rem;
+    padding-right: 2px;
+    padding-left: 2px;
+    line-height: 1;
+}
+
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
+.skills-heading {
+    background-color: slategray;
+    font-weight: inherit;
+    margin: 0;
+    font-size: 3rem;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+.skills-heading:hover{
+color: #393b40;
+}
+
+.skills-text{
+    font-size:14px;
+    color: #6b7280;  /* Optional text color */
+    padding-top: 0.5rem;
+    margin: 0;
+}
+
+.skills-space {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 1.5rem;
+}
+
+.skills-space h2 {
+    color:black;
+    font-weight: inherit;
+    margin: 0;
+    font-size: inherit;
+
+}
+
+.skills-space:hover{
+    color: #6b7280;
+}
+ h2:hover {
+    color:rgb(246, 246, 246);
+}
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+        gap:5rem;
+    }
+    .skills-heading {
+        font-size: 2.25rem;
+    }
+    .skills-icons-grid {
+        font-size: 2rem;
+
+    }
+
+    .skills-text {
+        font-size:14px;
+        color: #6b7280;  /* Optional text color */
+    }
+    /* Change text color to white on hover */
+.skills-text:hover {
+    color: white;
+}
+.skills-space h2:hover {
+    color:whitesmoke;
+}
+
+
+    
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 6rem;
+    }
+
+    .skills-heading {
+        font-size: 1.75rem;
+    }
+    .skills-icons-grid {
+        font-size: 1.75rem;
+    }
+    .skills-left {
+        text-align: center;
+    }
+
+
+    .skills-left::before,
+     .skills-left::after {
+         height: 100%; 
+         width: 100%;  
+     }
+     .skills-text {
+        font-size:12px;
+        color: #6b7280;  /* Optional text color */
+    }
+    /* Change text color to white on hover */
+.skills-text:hover {
+    color: white;
+}
+.skills-space h2:hover {
+    color:whitesmoke;
+}
+
+    
+}
+
+/* For very small screens (320px) */
+@media (max-width: 320px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap:6rem;
+    
+    }
+
+    .skills-heading {
+        font-size: 1.5rem; /* Reduce font size for small screens */
+    }
+
+    .skills-icons-grid {
+        font-size: 1.5rem; /* Reduce font size for small screens */
+    }
+    .skills-space h1 {
+        font-size: 1.5rem; /* Adjust heading size for small screens */
+    }
+
+    .skills-space h2 {
+        font-size: 1.25rem; /* Reduce individual skill title size */
+    }
+
+    .skills-left {
+        padding-right: 5px; /* Reduce padding */
+        padding-left: 5px; /* Reduce padding */
+    }
+
+    .skills-text {
+        font-size:10px;
+        color: #6b7280;  /* Optional text color */
+    }
+    /* Change text color to white on hover */
+.skills-text:hover {
+    color: white;
+}
+.skills-space h2:hover {
+    color:whitesmoke;
+}
+
+    
+
+     /* Full width and height for animation */
+     .skills-left::before,
+     .skills-left::after {
+         height: 100%; /* Full height on small screens */
+         width: 100%;  /* Full width on small screens */
+     }
+}
+
+
+
+
+
+/* Define keyframes for the border animation */
+@keyframes borderAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem; /* Slightly smaller font size */
+    }
+}
+
+/* For very small screens (320px) */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.25rem; /* Even smaller font size */
+    }
+}
+
+
+
+
+
+.skills-right {
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px; /* Adjust as per your design */
+}
+
+.skills-icons-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns by default */
+    gap: 3rem; /* Spacing between columns */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.skills-space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-space h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.skills-space h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design for screens smaller than 1024px */
+@media (max-width: 1024px) {
+    .skills-icons-grid {
+        grid-template-columns: 1fr; /* Switch to one column */
+        gap: 2rem; /* Adjust the spacing between items */
+    }
+}
+
+/* For very small screens (320px and below) */
+@media (min-width: 320px) {
+    .skills-space h1 {
+        font-size: 1.5rem; /* Adjust heading size for small screens */
+    }
+    .skills-grid{
+        gap: 5rem;
+    }
+
+    .skills-space h2 {
+        font-size: 1rem; /* Adjust skill text size for small screens */
+    }
+}
+
+
+
+
+
+.skills-right {
+    max-width: 100%;
+    min-width: 80%;
+   position: relative;
+   
+   margin:0;
+
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    
+}
+
+.skills-right::before{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+background-color: rgb(38, 63, 88);
+    box-shadow: 0 0 20px  rgb(120, 53, 53);
+    animation: animate 4s linear infinite;
+}
+
+.skills-right::after{
+    content: "";
+    position: absolute;
+    inset: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(92, 91, 94, 0.5);
+
+    
+    border-radius: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}  
+
+
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
+    top:18px;
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 0.5rem;
+    overflow: hidden;
+    background: linear-gradient(45deg, rgb(15, 15, 15), rgb(94, 93, 93));
+    background-size: 200% 200%; /* Enlarges the background gradient for movement */
+    animation: rotateBackground 6s linear infinite; /* Rotating and moving background animation */
+}
+
+/* Animated border effect using a pseudo-element */
+h1::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 15px;
+    border: 2px solid rgba(252, 249, 249, 0.8);
+    animation: rotateAnimation 6s linear infinite;
+    z-index: -1;
+}
+
+/* Second animated border effect using the after pseudo-element */
+h1::after {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border-radius: 20px;
+    border: 2px solid rgba(249, 244, 244, 0.5);
+    animation: rotateAnimationReverse 6s linear infinite;
+    z-index: -2;
+}
+
+/* Keyframes for background rotation and movement */
+@keyframes rotateBackground {
+    0% {
+        background-position: 0% 50%;
+        transform: rotate(0deg);
+    }
+    50% {
+        background-position: 100% 50%;
+        transform: rotate(180deg);
+    }
+    100% {
+        background-position: 0% 50%;
+        transform: rotate(360deg);
+    }
+}
+
+/* Keyframes for forward rotation */
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Keyframes for reverse rotation */
+@keyframes rotateAnimationReverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.background-overlay  ,h2  {
+    position: relative;
+}
+
+h2, .background-overlay::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(252, 248, 248, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+h2 {
+    font-size: 1.5rem; 
+    position: relative;
+    z-index: 2; /* Brings text above the overlay */
+    color: #fff; /* White or lighter text color for contrast */
+}

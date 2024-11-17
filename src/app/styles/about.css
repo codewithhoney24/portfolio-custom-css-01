@@ -1,0 +1,116 @@
+/* About Container Styling */
+.about-container {
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Maximum width */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Decorative Background */
+.about-container::before,
+.about-container::after {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: -1;
+    padding: 0.5px;
+    background-image: conic-gradient(rgb(121, 140, 159), rgb(38, 63, 88));
+    animation: spin 3s linear infinite;
+}
+
+.about-container::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+/* About Heading */
+.about-heading {
+    color: black;
+    font-size: 2.25rem;
+    font-weight: bolder;
+    margin-bottom: 25px;
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+/* About Text */
+.about-text {
+    padding-bottom: 5rem;
+    line-height: 1.5;
+    margin: 10px;
+    margin-top: 25px; /* Adjust this value for more gap */
+    text-align: center;
+    text-decoration: none;
+    color: rgb(4, 4, 4);
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Responsive Adjustments for Larger Screens */
+@media (min-width: 1024px) {
+    .hidden-lg {
+        display: block;
+    }
+}
+
+/* Responsive Adjustments for Medium Screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .about-heading {
+        font-size: 1.825rem;
+    }
+    .about-text {
+        font-size: 1.125rem;
+    }
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+    .about-heading {
+        font-size: 1.875rem;
+    }
+    .about-text {
+        font-size: 1rem;
+    }
+    .about-container {
+        padding: 2rem; /* Add padding for spacing */
+    }
+}
+
+/* Responsive Adjustments for Extra Small Screens (320px) */
+@media (max-width: 480px) {
+    .about-heading {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .about-text {
+        font-size: 0.875rem;
+        line-height: 1.25;
+    }
+    .about-container {
+        width: 95%; /* Reduce width for very small screens */
+        padding: 1rem; /* Add extra padding */
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,234 @@
+/* Hero Container */
+.hero-container {
+    min-height: 100vh;
+    background: url("/img (3).png") no-repeat;
+    background-size: 35%;
+    background-position: left 10% bottom 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px; 
+}
+
+
+/* Hero Content - Centered Content */
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: calc(100vh - 60px);
+    gap: 20px; /* Adds space between columns */
+}
+
+/* Hero Image */
+.hero-image {
+    border-radius: 50%;
+    border: 4px solid gray;
+    object-fit: cover;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Hero Text */
+.hero-text {
+    font-family: cursive;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 4.5rem; /* Adjusted for better responsiveness */
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Hero Text Styling for Paragraph */
+.hero-msin p {
+    margin: 0;
+}
+
+.hero-msin p:hover {
+    color: rgb(98, 96, 96);
+}
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+/* Hidden Large Screen Element */
+.hidden-lg {
+    display: none;
+}
+
+
+/* N-img Container */
+.N-img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    transition: opacity 0.5s;
+    padding-right: 1rem;
+}
+
+/* Styling the Image inside .N-img */
+.N-img img {
+    opacity: 0.4;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Adjustments for Large Tablets and Smaller */
+@media (max-width: 1024px) {
+    .hero-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        background-size: 30%; /* Adjust background size */
+        background-position: center; /* Center the background */
+        min-height: 100vh; /* Ensure the container takes full viewport height */
+        padding-top: 2rem; /* Add space between the navbar and the image */
+    }
+
+    .N-img {
+        max-width: 90%; /* Ensure the image does not touch edges */
+        height: auto; /* Maintain aspect ratio */
+        margin: 1rem auto; /* Add margin to separate it from the navbar */
+    }
+
+    .hero-text {
+        margin: 2rem 0 0 0; /* Add more space above the text */
+        padding: 0;
+        font-size: 2.2rem; /* Slightly increase the font size */
+        text-align: center; /* Center align text */
+    }
+
+    .hero-container p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem; /* Slightly increase paragraph font size */
+        text-align: center; /* Center the paragraph */
+    }
+}
+
+
+
+/* Responsive Adjustments for Tablets */
+@media (max-width: 768px) {
+    .hero-container {
+        background-size: 35%; /* Adjust background size */
+        padding-top: 3rem; /* Add more space between navbar and container */
+        margin-left: 16rem;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr; /* Stack content in a single column */
+    }
+
+    .hero-text {
+        padding-top: 5rem; /* Add more space above the text */
+        font-size: 2.4rem; /* Increase font size slightly */
+        position: static; /* Keep default positioning */
+        padding-right: 30px;
+        margin-top: 6rem; /* Add more space above */
+    }
+
+    .N-img {
+        padding-top: 6rem; /* Push the image further down */
+        max-width: 200px; /* Keep the image at a fixed size */
+        right: auto; 
+        left: 50%; /* Center the image */
+        transform: translateX(-50%);
+        padding-right: 0;
+        margin-top: 6rem; /* Add space above the image */
+    }
+
+    .hero-msin, p {
+        padding-top: 5rem; /* Add space for paragraphs */
+        margin-top: 6rem; /* Increase margin for separation */
+        font-size: 1.2rem; /* Increase text size slightly */
+    }
+}
+
+
+/* Responsive Adjustments for Small Mobile */
+@media (max-width: 480px) {
+    .hero-container {
+        background-size: 60%; /* Adjust background size */
+        padding-top: 2rem; /* Increase padding from the top */
+        margin-left: 0; /* Reset unnecessary horizontal adjustment */
+        text-align: center; /* Center text and inline elements */
+    }
+
+    .hero-text {
+        font-size: 1.8rem; /* Slightly increase font size */
+        margin: 16rem auto 0; /* Center horizontally and add spacing */
+        text-align: center; /* Ensure text is centered */
+        line-height: 1.5; /* Improve readability */
+    }
+
+    .N-img {
+        text-align: center;
+        max-width: 150px; /* Maintain image size */
+        margin: 18rem auto 0; /* Center horizontally and add spacing */
+        display: block; /* Ensure the image is treated as a block element */
+    }
+
+    .hero-msin, p {
+        text-align: center;
+        font-size: 1.2rem; /* Increase text size for better readability */
+        margin: 16rem auto 0; /* Center text and spacing */
+        text-align: center; /* Center align the text */
+        line-height: 1.4; /* Improve paragraph spacing */
+    }
+}
+
+
+
+
+
+/* Extra Small Screens */
+@media (max-width: 320px) {
+    .hero-container {
+        background-size: 80%;
+        padding-top: 4px;
+        margin-left: 10rem;
+    }
+ .N-img {
+        max-width: 100px;
+        margin-bottom: auto;
+     margin-left: 2rem;
+     
+    }
+    .hero-text {
+        font-size: 1.2rem;
+        margin-top: 18rem;
+        margin-left: 8rem;
+    }
+
+    
+    
+.hero-msin, p{
+    margin-top: 1rem;
+    margin-left: 8rem;
+
+}
+}
