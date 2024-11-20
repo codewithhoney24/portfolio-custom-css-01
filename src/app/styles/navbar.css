@@ -1,22 +1,17 @@
 /* Navbar Container */
 .navbar-container {
     position: fixed;
-
+    top: 0;
+    left: 0;
+    right: 0;
     padding-left: 25px;
     padding-right: 25px;
     margin-left: auto;
-   margin-right: auto;
+    margin-right: auto;
     width: 100%;
     background-color: rgb(121, 140, 159);
     z-index: 10;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 1280px) {
-    .navbar-container {
-        max-width: 1280px;
-        margin: 0 auto;
-    }
 }
 
 /* Navbar */
@@ -62,26 +57,26 @@
     font-size: 1.5rem;
     cursor: pointer;
     color: whitesmoke;
-    padding: 0.5rem; /* Adds spacing around icon */
-    margin-left: auto; /* Aligns the icon to the right on small screens */
+    padding: 0.5rem;
 }
 
-/* Hide links on smaller screens */
+/* Media Queries */
+
+/* Tablet View (768px - 1024px) */
 @media (max-width: 1024px) {
     .navbar-links {
-        display: none; /* Hide main links on medium and smaller screens */
+        display: none; /* Hide links */
     }
 
     .navbar-menu-icon {
         display: block; /* Show menu icon */
     }
 
-    /* Show links as a dropdown when menu is open */
     .navbar-links.open {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 100%; /* Position below navbar */
+        top: 100%;
         left: 0;
         right: 0;
         background-color: rgb(121, 140, 159);
@@ -92,23 +87,10 @@
     .navbar-link a {
         font-size: 1.25rem;
         text-align: center;
-        color: whitesmoke;
     }
 }
 
-@media (max-width: 786px){
-    /* Larger Screen (Tablet 768px - 1024px) */
-   .navbar-container {
-width: 100%;
-padding: 0;
-   }
-}
-
-
-
-
-
-/* Mobile View (320px and up) */
+/* Mobile View (480px and below) */
 @media (max-width: 480px) {
     .navbar {
         padding: 1rem;
@@ -120,28 +102,21 @@ padding: 0;
     
     .navbar-menu-icon {
         font-size: 1.25rem;
-        padding: 0.5rem 1rem; /* Adjusts spacing on mobile for comfort */
-    }
-    
-    .navbar-links.open {
-        padding: 1rem 0;
+        padding: 0.5rem 1rem;
     }
 }
 
-/* Larger Screen (Tablet 768px - 1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
-
+/* Ensure responsiveness on all screen sizes */
+@media (max-width: 768px) {
     .navbar-container {
-        padding-bottom: 1rem;
+        width: 100%;
+        padding: 0;
     }
+
     .navbar-brand {
         font-size: 1.75rem;
     }
 
-    .navbar-menu-icon {
-        font-size: 1.5rem;
-    }
-    
     .navbar-links.open {
         padding: 1rem;
     }
