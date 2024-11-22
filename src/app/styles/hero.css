@@ -16,21 +16,18 @@
   
   /* Hero Image */
   .N-img {
-    
-    position: absolute;
-    margin-right:15%; /* Position image to the right */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1; /* Ensure image stays behind text */
+    margin-bottom: 1rem; /* Add spacing between the image and text */
   }
-  
   .N-img img {
+    margin-left: -45%;
     border-radius: 50%;
     object-fit: cover;
-    max-width: 300px; /* Image width */
-    height: 300px; /* Image height */
+    width: 300px; /* Consistent image size */
+    height: 300px;
   }
+  
+  
+  
   
   /* Hero Text */
   .para-text {
@@ -73,67 +70,88 @@
   /* Tablets (768px - 1023px) */
   @media (max-width: 1023px) {
     .hero-container {
-      flex-direction: column; /* Stack content vertically */
+      gap: 2rem;
       background-size: 30%;
-      background-position: center, 20% bottom;
-    
+       
     }
   
     .para-text {
-      font-size: 1.75rem; /* Smaller text for tablets */
-      margin-right: 0; /* Remove the right margin */
-      max-width: 70%; /* Increase text width on tablets */
-      text-align: center; /* Center-align text */
+      font-size: 1.85rem; /* Larger text size for large screens */
+      max-width: 35%; /* Make text box slightly smaller */
+      margin-right: 15%; /* Adjust the text margin for large screens */
     }
   
     .N-img img {
-      max-width: 250px; /* Smaller image for tablets */
-      height: 200px;
-      margin: auto;
+      max-width: 200px; /* Larger image size on large screens */
+      height: 100px;
     }
   }
   
   /* Small Screens (480px - 767px) */
   @media (max-width: 767px) {
     .hero-container {
-      flex-direction: column;
-      background-size: 40%;
-      background-position: center ,  10% bottom ;
+      gap: 2rem;
+      background-size: 30%;
+       
     }
   
     .para-text {
-      font-size: 1.5rem; /* Smaller text size */
-      max-width: 80%; /* Increase text width */
-      margin-right: 0; /* Remove the right margin */
-      text-align: center; /* Center-align text */
+      font-size: 1.75rem; /* Larger text size for large screens */
+      max-width: 30%; /* Make text box slightly smaller */
+      margin-right: 15%; /* Adjust the text margin for large screens */
     }
   
     .N-img img {
-      max-width: 180px; /* Smaller image for small screens */
-      height: 180px;
+      max-width: 200px; /* Larger image size on large screens */
+      height: 100px;
     }
   }
   
   /* Extra Small Screens (Below 480px) */
   @media (max-width: 480px) {
     .hero-container {
-      padding: 1rem;
-      background-size: 50%;
-      background-position: center  ;
+      padding: 2.5rem;
+      background-size: 30%;
+      top:-2rem;
+      background-position: center   -20% top   30% left  ;
+    }
+    .N-img img {
+    
+      width: 100px; /* Smaller image for extra small screens */
+      height: 100px;
+      margin-right: -1.5rem;
+      margin-bottom: -2rem;
     }
   
     .para-text {
-      font-size: 1.25rem; /* Smallest text size */
-      max-width: 90%; /* Increase text width on very small screens */
-      margin-right: 10; /* Remove right margin */
-      text-align: center; /* Center-align text */
+      bottom: 22%;
+      font-size: 1rem; /* Adjust text size */
+      padding: 0.5rem;
     }
   
-    .N-img img {
-        margin-right: 20px;
-      max-width: 120px; /* Smallest image size */
-      height: 120px;
-      margin-bottom: 3rem; /* Add space below image */
-    }
+  
+    @media (max-width: 320px) {
+      .hero-container {
+        padding: 2.5rem;
+        background-size: 30%;
+        top:-2rem;
+        background-position: center   -20% top   30% left  ;
+      }
+      .N-img img {
+    
+    
+        width: 100px; /* Smaller image for extra small screens */
+        height: 100px;
+        margin-right: -1.5rem;
+        margin-bottom: -2rem;
+        
+      }
+    
+      .para-text {
+        bottom: 22%;
+        font-size: 1rem; /* Adjust text size */
+        padding: 0.5rem;
+      }
+    
   }
-  
+}

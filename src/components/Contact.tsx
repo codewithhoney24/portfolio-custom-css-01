@@ -28,16 +28,16 @@ const Contact = () => {
       <div id="contact" className="contact-container">
         <div className="contact-grid">
           <div className="contact-space">
-            <h2 className="contact-heading" data-aos="zoom-in-up">
+            <h2 className="contact-heading" >
               Get in touch
             </h2>
-            <p className="contact-text" data-aos="zoom-in-up">
+            <p className="contact-text" >
               Feel free to reach out—drop me a line, give me a call, or send a
               message using the form. I m here to connect, answer any questions,
               or chat about potential collaborations.
             </p>
 
-            <div className="contact-flex" data-aos="zoom-in-up">
+            <div className="contact-flex">
               <AiOutlineMail size={30} /> abc123@gmail.com
             </div>
             <div className="contact-flex1" >
@@ -50,11 +50,11 @@ const Contact = () => {
               <label htmlFor="name">Name :</label>
               <input type="text" id="name" className="input-field" />
             </div>
-            <div className="form" data-aos="zoom-in-up">
+            <div className="form" >
               <label htmlFor="email">Email :</label>
               <input type="email" id="email" className="input-field" />
             </div>
-            <div className="form" data-aos="zoom-in-up">
+            <div className="form">
               <label htmlFor="message">Message :</label>
               <textarea id="message" className="textarea-field" rows={8}></textarea>
             </div>

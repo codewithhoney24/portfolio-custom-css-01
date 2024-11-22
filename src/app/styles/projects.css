@@ -6,7 +6,7 @@
     align-items: center;
     margin:0 auto;
     
-    padding:15px;
+    padding:75px;
     
 
 }
@@ -46,40 +46,23 @@
     place-items: center;
  }
 
- @media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-     }
-   
- }
-
- @media (max-width:768px) and (max-width:1024px) {
-    .projects-grid {
-        grid-template-columns: repeat(2,1fr);
-     }
-    
- }
-
- @media (min-width: 1024px) {
-    .projects-grid {
-        grid-template-columns: repeat(3,1fr);
-     }
- }
 
 
 
  .button-container {
+   
    display: flex;
     flex-direction: column; /* Stack buttons vertically */
     align-items: center; /* Center buttons horizontally */
     gap: 1rem; /* Add space between buttons */
-    margin-top: 2rem;
+    margin-top: 0.4rem;
     width: 100%; /* Ensure buttons take up full width */
     text-align: center
    
 }
 
 .view-more-btn {
+   gap:10%;
    width: 80%; /* Make buttons wider */
     max-width: 300px; /* Limit maximum width */
     text-align: center; /* Center text inside the button */
@@ -106,6 +89,46 @@
 
 .card-title{
    font-size: 1.5rem;
-   font-weight: 600;
+   font-weight: 400;
    margin-top: -1rem;
 }
+
+
+
+
+
+
+
+/* For Screens Below 768px */
+@media (max-width: 768px) {
+   .projects-grid {
+      
+         grid-template-columns: 1fr; /* One card per row */
+         gap: 2rem; /* Add more spacing for smaller screens */
+       }
+       .card-title{
+         font-size: 1rem;
+         font-weight: 200;
+         margin-top: -1rem;
+      }
+      
+   }
+ 
+ 
+ /* For Screens Below 480px */
+ @media (max-width: 480px) {
+   .projects-grid {
+     grid-template-columns: 1fr; /* One card per row */
+     gap: 2rem; /* Add more spacing for smaller screens */
+   }
+    .card-title{
+         font-size: 1rem;
+         font-weight: 200;
+         margin-top: -1rem;
+      }
+      .heading-title{
+         font-size: 1.5rem;
+         font-weight: 400;
+         margin-top: -1rem;
+      }
+ }
