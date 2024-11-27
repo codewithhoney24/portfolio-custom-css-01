@@ -56,7 +56,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navbar-link">
-            <Link href="#skills" onClick={toggleMenu}>
+            <Link href="#skills">
               Skills
             </Link>
           </li>

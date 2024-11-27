@@ -1,15 +1,28 @@
-.projects-container{
 
-    padding-top: 3.5rem;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin:0 auto;
-    
-    padding:75px;
-    
+.projects-container{
+   
+   display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack items if needed */
+  padding: 75px;
+  min-height: 100vh;
 
 }
+
+.card {
+  
+   position: relative;
+
+   padding: 1rem;
+   border-radius: 10px;
+   background-color: rgb(51, 72, 94);
+   text-align: center;
+   height: 100%;
+  
+}
+
+
 .heading-container{
    display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack items vertically */
@@ -19,14 +32,15 @@
    
 }
 
-
-
 .projects-grid {
-    display: grid;
-    
-    gap: 2.5px;
-    
-}
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* Always 3 cards in one row */
+   gap: 2rem; /* Add spacing between cards */
+   width: 100%; /* Ensure the grid takes full container width */
+ }
+ 
+
+
  .projects-grid-xl {
     gap:2.5;
     
@@ -42,20 +56,18 @@
     grid-template-columns: repeat(3 1fr);
  }
 
- .projects-container{
-    place-items: center;
- }
-
+ 
 
 
 
  .button-container {
-   
+
+
    display: flex;
     flex-direction: column; /* Stack buttons vertically */
     align-items: center; /* Center buttons horizontally */
     gap: 1rem; /* Add space between buttons */
-    margin-top: 0.4rem;
+   
     width: 100%; /* Ensure buttons take up full width */
     text-align: center
    
@@ -96,7 +108,13 @@
 
 
 
-
+/* For Screens Above 1200px (Large Screens) */
+@media (min-width: 1200px) {
+   .projects-grid {
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts based on card size */
+     gap: 2rem; /* Add spacing between cards */
+   }
+ }
 
 
 /* For Screens Below 768px */

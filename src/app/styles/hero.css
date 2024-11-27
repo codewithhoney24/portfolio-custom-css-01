@@ -107,51 +107,72 @@
     }
   }
   
-  /* Extra Small Screens (Below 480px) */
-  @media (max-width: 480px) {
-    .hero-container {
-      padding: 2.5rem;
-      background-size: 30%;
-      top:-2rem;
-      background-position: center   -20% top   30% left  ;
-    }
-    .N-img img {
-    
-      width: 100px; /* Smaller image for extra small screens */
-      height: 100px;
-      margin-right: -1.5rem;
-      margin-bottom: -2rem;
-    }
   
-    .para-text {
-      bottom: 22%;
-      font-size: 1rem; /* Adjust text size */
-      padding: 0.5rem;
-    }
-  
-  
-    @media (max-width: 320px) {
-      .hero-container {
-        padding: 2.5rem;
-        background-size: 30%;
-        top:-2rem;
-        background-position: center   -20% top   30% left  ;
-      }
-      .N-img img {
-    
-    
-        width: 100px; /* Smaller image for extra small screens */
-        height: 100px;
-        margin-right: -1.5rem;
-        margin-bottom: -2rem;
-        
-      }
-    
-      .para-text {
-        bottom: 22%;
-        font-size: 1rem; /* Adjust text size */
-        padding: 0.5rem;
-      }
+
+
+
+
+/* Extra Small Screens (Below 480px) */
+@media (max-width: 480px) {
+  .hero-container {
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 2.5rem;
+    background-size: 55%;
+    bottom: -6rem;
+    background-position: center top; /* Align background to the center top */
+  }
+
+  .N-img {
+    margin-top: 1.5rem; /* Adjust margin to move up */
+    margin-right: 1rem; /* Move slightly to the right */
+   
+  }
+
+  .N-img img {
+    width: 100px; /* Adjust size for small screens */
+    height: 100px;
+    margin-bottom: 7rem;
+    margin-left:2.5rem ;
+  }
+
+  .para-text {
+    font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 3.5rem;
+        padding-right: 10rem;
     
   }
 }
+
+/* For Extra Small Screens (Below 320px) */
+@media (max-width: 320px) {
+  .hero-container {
+    padding: 2.5rem;
+    background-size: 55%;
+    bottom: -6rem;
+    background-position: center top;
+    margin-right: 2rem;
+  }
+
+  .N-img {
+    margin-top: 1rem;
+    margin-right: 0.8rem;
+  }
+
+  .N-img img {
+    width: 80px; /* Smaller image for extra small screens */
+    height: 80px;
+    margin-bottom: 7rem;
+    margin-left: 2.5rem;
+  }
+
+  .para-text {
+    font-size: 0.9rem; /* Slightly smaller text for very small screens */
+    text-align: center;
+    margin-bottom: 6rem;
+   margin-right: 6.5rem;
+  }
+}
+
