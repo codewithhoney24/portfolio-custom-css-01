@@ -3,8 +3,9 @@
 
     
 .contact-container {
+   
     margin: 0 auto; /* Center horizontally */
-    padding: 100px 20px 100px 20px; /* Add top padding to separate from navbar */
+    padding: 70px 20px 100px 20px; /* Add top padding to separate from navbar */
     position: relative; /* For background positioning */
     overflow: visible; /* Allow content to flow outside */
 }
@@ -102,12 +103,13 @@
 }
 
 .button {
+    padding: 0.2rem  0.6rem;
 position: absolute;
 top:85%;
     background-color: rgb(104, 118, 133);
     color: white;
     overflow: visible;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 800;
     cursor: pointer;
     border-radius: 4px;
@@ -154,8 +156,17 @@ top:85%;
     }
 
     .button {
-        font-size: 0.875rem;
-        padding: 0.5rem 1rem;
-        margin-top: 18%;
+        font-size: 0.825rem;
+        padding: 0.5rem 0.85rem;
+        position: relative;
+        top: -10px; /* Moves upward */
     }
+
+    .contact-container {
+        margin: 0 auto; /* Center horizontally */
+        padding: 100px 20px 100px 20px; /* Add top padding to separate from navbar */
+        position: relative; /* For background positioning */
+        overflow: visible; /* Allow content to flow outside */
+    }
+
 }

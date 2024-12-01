@@ -33,7 +33,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 1rem;
+    padding: 0.85rem;
     text-align: center;
     background-color: rgb(38, 63, 88);
     color: #fff;
@@ -56,6 +56,20 @@
     .footer {
         padding: 0.825rem;
         font-size: 1.125rem;
+    }
+
+    @media (max-width: 480px) {
+        .footer {
+            padding: 0.8rem;
+            font-size: 0.1rem;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .footer {
+            padding: 0.8rem;
+            font-size: 0.1rem;
+        }
     }
 }
 

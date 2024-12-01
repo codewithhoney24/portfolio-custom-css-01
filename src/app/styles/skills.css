@@ -172,6 +172,11 @@ color: #393b40;
     color:whitesmoke;
 }
 
+.skills-grid{
+    margin-right:1rem;
+    margin-left: 1rem;
+}
+
     
 }
 
@@ -195,6 +200,18 @@ color: #393b40;
     }
 }
 
+@media (max-width: 480px) {
+
+    .hero-container{
+        min-height: 65vh;
+    }
+    .skills-left {
+        min-height: unset;
+    }
+    .N-img {
+        margin-bottom: 6rem;
+    }
+}
 
 
 
@@ -210,10 +227,10 @@ color: #393b40;
     }
 
     .skills-heading {
-        font-size: 0.85rem; /* Reduce font size for small screens */
+        font-size: 1.8rem; /* Reduce font size for small screens */
         line-height: 1.5rem;
-        padding-left: 2rem;
-        padding-right: 5rem;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
         text-align: center;
         justify-content: center;
         
@@ -221,25 +238,24 @@ color: #393b40;
         
     }
 
-
-
-    
-
-
     .skills-icons-grid {
+        margin-left: 50px; /* Add space from the left */
+        margin-right: 50px;
+      
         font-size: 0.85rem; /* Reduce font size for small screens */
     }
     .skills-space h1 {
-        font-size: 0.85rem; /* Adjust heading size for small screens */
+        font-size: 1.5rem; /* Adjust heading size for small screens */
     }
 
     .skills-space h2 {
-        font-size: 0.85rem; /* Reduce individual skill title size */
+        font-size: 1.5rem; /* Reduce individual skill title size */
     }
 
     .skills-left {
-        padding-right: 3px; /* Reduce padding */
-        padding-left: 3px; /* Reduce padding */
+        bottom: 2rem;
+        padding-right: 4px; /* Reduce padding */
+        padding-left: 4px; /* Reduce padding */
     }
 
     .skills-text {
@@ -253,13 +269,13 @@ color: #393b40;
 }
 .skills-space h2:hover {
     color:whitesmoke;
-}
 
-    
+}
 
      /* Full width and height for animation */
      .skills-left::before,
      .skills-left::after {
+        bottom: -35%;
          height: 70%; /* Full height on small screens */
          width: 70%;  /* Full width on small screens */
      }
@@ -285,7 +301,8 @@ color: #393b40;
 }
 
 .skills-icons-grid {
-
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns by default */
     gap: 3rem; /* Spacing between columns */
@@ -320,9 +337,6 @@ color: #393b40;
 
 
 
-
-
-
 .skills-right {
     max-width: 100%;
     min-width: 80%;
@@ -330,7 +344,7 @@ color: #393b40;
    
    margin:0;
 
-    padding: 0;
+    padding:0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -473,15 +487,6 @@ h1::after {
 
 
 
-
-
-
-
-
-
-
-
-
 .background-overlay  ,h2  {
     position: relative;
 }
@@ -502,7 +507,7 @@ h2, .background-overlay::before {
 }
 
 h2 {
-    font-size: 1.5rem; 
+    font-size: 2.5rem; 
     position: relative;
     z-index: 2; /* Brings text above the overlay */
     color: #fff; /* White or lighter text color for contrast */

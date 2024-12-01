@@ -1,178 +1,534 @@
+
+
+
 /* General Styles */
 .hero-container {
-    background: url("/img (3).png") no-repeat;
-    background-size: 30%;
-    background-position: 20% 60%; /* Adjust vertical position to move image down */
-    position: relative;
-    display: flex;
-    justify-content: flex-end; /* Align content to the right */
-    align-items: center; /* Center content vertically */
-    min-height: 100vh; /* Set the container height to 100% of the viewport */
-    gap: 1rem;
-    padding: 1rem;
-    width: 100%;
+  background: url("/img (3).png") no-repeat;
+  
+  background-size: 30%;
+  background-position: 20% 60%; /* Adjust vertical position to move image down */
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Set the container height to 100% of the viewport */
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  bottom:1rem;
+ background-size: cover;
+ 
 
-  }
-  
-  /* Hero Image */
-  .N-img {
-    margin-bottom: 1rem; /* Add spacing between the image and text */
-  }
-  .N-img img {
-    margin-left: -45%;
-    border-radius: 50%;
-    object-fit: cover;
-    width: 300px; /* Consistent image size */
-    height: 300px;
-  }
   
   
+}
+
+
+
+
+
+/* Hero Image */
+.N-img {
+
   
-  
-  /* Hero Text */
-  .para-text {
-    font-family: cursive;
-    font-size: 2.25rem;
-    color: #ffffff;
-    margin-right:23%;
-    line-height: 1.5;
-    text-align: center; /* Center the text */
-    padding: 1rem;
-    max-width: 50%; /* Ensure text doesn't exceed container width */
-    position: absolute; /* Position text on top of the image */
-    right: 0;
-    z-index: 2; /* Ensure text is above the image */
-    text-align: center; /* Center the text */
-  }
-  
+  margin-bottom: 1rem; /* Add spacing between the image and text */
+}
+.N-img img {
+
+  margin-left: -45%;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 300px; /* Consistent image size */
+  height: 300px;
+}
+
+
+h3 {
+  white-space: nowrap;
+  font-size: 3rem; /* Larger text size for large screens */
+  max-width: 45%; /* Make text box slightly smaller */
+  margin-right: 15%; /* Adjust the text margin for large screens */
+}
+h3 span {
+  display:inline-block;
+}
+
+
+
+
+/* Hero Text */
+.para-text {
+  font-family: cursive;
+  font-size: 2.25rem;
+  color: #ffffff;
+  margin-right:23%;
+  line-height: 1.5;
+  text-align: center; /* Center the text */
+  padding: 1rem;
+  max-width: 50%; /* Ensure text doesn't exceed container width */
+  position: absolute; /* Position text on top of the image */
+  right: 0;
+  z-index: 2; /* Ensure text is above the image */
+  text-align: center; /* Center the text */
+}
+
 /* Responsive Adjustments */
 
 /* Large Screens (Above 1024px) */
 @media (min-width: 1024px) {
-    .hero-container {
-      gap: 2rem;
-      background-size: 30%;
-       
-    }
-  
-    .para-text {
-      font-size: 3rem; /* Larger text size for large screens */
-      max-width: 45%; /* Make text box slightly smaller */
-      margin-right: 15%; /* Adjust the text margin for large screens */
-    }
-  
-    .N-img img {
-      max-width: 400px; /* Larger image size on large screens */
-      height: 400px;
-    }
+  .hero-container {
+    gap: 2rem;
+    background-size: 30%;
+     
   }
-  
-  /* Tablets (768px - 1023px) */
-  @media (max-width: 1023px) {
-    .hero-container {
-      gap: 2rem;
-      background-size: 30%;
-       
-    }
-  
-    .para-text {
-      font-size: 1.85rem; /* Larger text size for large screens */
-      max-width: 35%; /* Make text box slightly smaller */
-      margin-right: 15%; /* Adjust the text margin for large screens */
-    }
-  
-    .N-img img {
-      max-width: 200px; /* Larger image size on large screens */
-      height: 100px;
-    }
-  }
-  
-  /* Small Screens (480px - 767px) */
-  @media (max-width: 767px) {
-    .hero-container {
-      gap: 2rem;
-      background-size: 30%;
-       
-    }
-  
-    .para-text {
-      font-size: 1.75rem; /* Larger text size for large screens */
-      max-width: 30%; /* Make text box slightly smaller */
-      margin-right: 15%; /* Adjust the text margin for large screens */
-    }
-  
-    .N-img img {
-      max-width: 200px; /* Larger image size on large screens */
-      height: 100px;
-    }
-  }
-  
-  
 
+  .para-text {
+    font-size: 3rem; /* Larger text size for large screens */
+    max-width: 45%; /* Make text box slightly smaller */
+    margin-right: 15%; /* Adjust the text margin for large screens */
+  }
+
+  h3 {
+    font-size: 3rem; /* Larger text size for large screens */
+    max-width: 45%; /* Make text box slightly smaller */
+    margin-right: 15%; /* Adjust the text margin for large screens */
+  }
+
+  .N-img img {
+    max-width: 400px; /* Larger image size on large screens */
+    height: 400px;
+  }
+}
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 1023px) {
+  .hero-container {
+    gap: 2rem;
+    background-size: 30%;
+     
+  }
+
+  .para-text {
+    font-size: 1.85rem; /* Larger text size for large screens */
+    max-width: 35%; /* Make text box slightly smaller */
+    margin-right: 15%; /* Adjust the text margin for large screens */
+  }
+  h3 {
+    font-size: 1.85rem; /* Larger text size for large screens */
+    max-width: 35%; /* Make text box slightly smaller */
+    margin-right: 15%; /* Adjust the text margin for large screens */
+  }
+
+  .N-img img {
+    max-width: 200px; /* Larger image size on large screens */
+    height: 100px;
+  }
+}
+
+/* Small Screens (480px - 767px) */
+@media (max-width: 767px) {
+  .hero-container {
+    gap: 2rem;
+    background-size: 40%;
+     
+  }
+
+  .para-text {
+    font-size: 1.75rem; /* Larger text size for large screens */
+    max-width: 30%; /* Make text box slightly smaller */
+    margin-right: 5%; /* Adjust the text margin for large screens */
+  }
+  h3 {
+    font-size: 1.75rem; /* Larger text size for large screens */
+    max-width: 30%; /* Make text box slightly smaller */
+    margin-right: 5%; /* Adjust the text margin for large screens */
+  }
+
+
+  .N-img img {
+    max-width: 200px; /* Larger image size on large screens */
+    height: 100px;
+    
+  
+  }
+  .N-img{
+    margin-right: -6rem;
+
+  }
+}
 
 
 
 /* Extra Small Screens (Below 480px) */
-@media (max-width: 480px) {
+@media (max-width: 480px  )   {
   .hero-container {
+    min-height:65vh;
     display: flex; /* Use Flexbox for layout */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
     padding: 2.5rem;
-    background-size: 55%;
+    background-size: 40%;
     bottom: -6rem;
     background-position: center top; /* Align background to the center top */
   }
-
+  
+  
+  .N-img img {
+    width: 100px; /* Adjust size for small screens */
+    height: 100px;
+    margin-top: 7rem;
+    margin-left: 0;
+  
+  }
   .N-img {
-    margin-top: 1.5rem; /* Adjust margin to move up */
-    margin-right: 1rem; /* Move slightly to the right */
-   
+    margin-top: 7rem;
+    margin-left: 0;
+    
+  }
+  
+  
+  .para-text {
+   font-size: 1.5rem;
+        text-align: center;
+        margin-right: 8rem;
+        margin-bottom: 2rem;
+       
+    
+  }
+  h3 {
+    font-size: 1.5rem;
+         text-align: center;
+         margin-right: 8rem;
+         margin-bottom: 2rem;
+        
+     
+   }
+}
+
+
+@media (max-width: 320px) {
+  .hero-container {
+    min-height:65vh;
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 2.5rem;
+    background-size: 50%;
+    background-position: center top; /* Align background to the center top */
+    bottom: -6rem;
   }
 
   .N-img img {
     width: 100px; /* Adjust size for small screens */
     height: 100px;
-    margin-bottom: 7rem;
-    margin-left:2.5rem ;
-  }
-
-  .para-text {
-    font-size: 1.6rem;
-        text-align: center;
-        margin-bottom: 3.5rem;
-        padding-right: 10rem;
-    
-  }
-}
-
-/* For Extra Small Screens (Below 320px) */
-@media (max-width: 320px) {
-  .hero-container {
-    padding: 2.5rem;
-    background-size: 55%;
-    bottom: -6rem;
-    background-position: center top;
-    margin-right: 2rem;
+    margin-top: 4rem; /* Move slightly upward */
+    margin-left: 0.8rem; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    transform: translateX(-1.1rem); /* Shift slightly to the left */
   }
 
   .N-img {
-    margin-top: 1rem;
-    margin-right: 0.8rem;
-  }
-
-  .N-img img {
-    width: 80px; /* Smaller image for extra small screens */
-    height: 80px;
-    margin-bottom: 7rem;
-    margin-left: 2.5rem;
+     margin-left:0.8rem;
+    margin-top: 4rem; /* Move slightly upward */
+    text-align: center; /* Ensure the container is centered */
+    transform: translateX(-1.1rem); /* Shift slightly to the left */
   }
 
   .para-text {
-    font-size: 0.9rem; /* Slightly smaller text for very small screens */
-    text-align: center;
-    margin-bottom: 6rem;
-   margin-right: 6.5rem;
+    font-size: 1.2rem;
+    text-align: center; /* Center text alignment */
+    margin-right: auto; /* Centered */
+    margin-left: auto; /* Centered */
+    margin-bottom: 2rem; /* Moved slightly up */
+    transform: translateX(-6.5rem); /* Shift slightly to the left */
+  }
+  h3 {
+    font-size: 1.2rem;
+    text-align: center; /* Center text alignment */
+    margin-right: auto; /* Centered */
+    margin-left: 6em; /* Centered */
+    margin-bottom: 2rem; /* Moved slightly up */
+    transform: translateX(-6.5rem); /* Shift slightly to the left */
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 220px) {
+  .hero-container {
+    min-height:65vh;
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 2.5rem;
+    background-size: 50%;
+    background-position: center top; /* Align background to the center top */
+    bottom: -6rem;
+  }
+
+  .N-img img {
+    width: 100px; /* Adjust size for small screens */
+    height: 100px;
+    margin-top: 4rem; /* Move slightly upward */
+    margin-left: 0.8rem; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    transform: translateX(-1.1rem); /* Shift slightly to the left */
+  }
+
+  .N-img {
+     margin-left:0.8rem;
+    margin-top: 4rem; /* Move slightly upward */
+    text-align: center; /* Ensure the container is centered */
+    transform: translateX(-1.1rem); /* Shift slightly to the left */
+  }
+
+  .para-text {
+    font-size: 1.2rem;
+    text-align: center; /* Center text alignment */
+    margin-right: -2rem; /* Centered */
+   
+    margin-bottom: 4.8rem; /* Moved slightly up */
+    transform: translateX(-6.5rem); /* Shift slightly to the left */
+  }
+  h3 {
+    font-size: 1.2rem;
+    text-align: center; /* Center text alignment */
+    margin-right: -2rem; /* Centered */
+   
+    margin-bottom: 4.8rem; /* Moved slightly up */
+    transform: translateX(-6.5rem); /* Shift slightly to the left */
+  }
+}
+
+
+
+
+
+  
+  
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

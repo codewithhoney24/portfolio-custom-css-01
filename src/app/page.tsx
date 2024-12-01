@@ -9,6 +9,7 @@ import Aos from "aos"
 import "aos/dist/aos.css";
 import Heading from '@/components/Heading';
 
+
 export default function Home() {
 
   useEffect(() => {
@@ -45,5 +46,12 @@ export default function Home() {
     </main>
   )
 }
+
+
+
+
+
+
+
 
 

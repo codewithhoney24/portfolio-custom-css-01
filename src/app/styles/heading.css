@@ -42,6 +42,14 @@
     }
     .heading-title{
         font-size: 1rem;
+        line-height: 3rem;
     
     }
+    
+        .button {
+            font-size: 0.875rem;
+            padding: 0.5rem 1rem;
+            margin-top: 9%;
+        }
+    
 }

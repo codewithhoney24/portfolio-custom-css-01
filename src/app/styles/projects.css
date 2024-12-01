@@ -10,17 +10,22 @@
 
 }
 
-.card {
-  
-   position: relative;
 
-   padding: 1rem;
-   border-radius: 10px;
-   background-color: rgb(51, 72, 94);
-   text-align: center;
-   height: 100%;
   
-}
+   .card {
+      margin: auto;
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      padding: 2rem;
+      height: 95%; /* Reduced height slightly from 90% */
+      border-radius: 10px;
+      overflow: hidden; /* Keep animation inside the card border */
+      background-color: rgb(51, 72, 94);
+      text-align: center;
+  }
+  
+  
 
 
 .heading-container{
