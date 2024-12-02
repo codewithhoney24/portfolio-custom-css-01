@@ -1,4 +1,5 @@
 .heading-container{
+    max-height: 100vh;
     margin: 0;
     text-align: center;
     font-size: 2.5rem;
@@ -15,6 +16,7 @@
 
 @media (max-width:1024px){
     .heading-container{
+        max-height: 100vh;
         font-size: 2rem;
         line-height: 2rem;
     }
@@ -25,24 +27,27 @@
 }
 
 @media (max-width:768){
-    .heading-container{
+    .heading-container{max-height: 100vh;
         font-size: 1.5rem;
         line-height: 1.5rem;
     }
     .heading-title{
         font-size: 1.2rem;
+        margin-top: 3rem;
     
     }
 }
 
 @media (max-width: 480px){
     .heading-container{
+        max-height: 100vh;
         font-size: 1.25rem;
         line-height: 1.25rem;
     }
     .heading-title{
         font-size: 1rem;
         line-height: 3rem;
+        margin-top: 12rem;
     
     }
     
