@@ -17,13 +17,9 @@
   width: 100%;
   bottom:1rem;
  background-size: cover;
- 
-
   
   
 }
-
-
 
 
 
@@ -176,25 +172,30 @@ h3 span {
   .N-img img {
     width: 100px; /* Adjust size for small screens */
     height: 100px;
-    margin-top: 7rem;
+    margin-top: 4rem;
     margin-left: 0;
   
   }
   .N-img {
-    margin-top: 7rem;
+    margin-top: 4rem;
     margin-left: 0;
     
   }
-  
+  .heading-title{
+    padding-top: -12rem;
+  }
   
   .para-text {
    font-size: 1.5rem;
         text-align: center;
         margin-right: 8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0.2rem;
        
     
   }
+
+  
+
   h3 {
     font-size: 1.5rem;
          text-align: center;
@@ -204,11 +205,34 @@ h3 span {
      
    }
 }
+@media (max-width: 376px){
 
+
+  .hero-container {
+    min-height:100vh;
+  }
+  .N-img img {
+  
+    width: 100px; /* Adjust size for small screens */
+    height: 100px;
+    margin-top: 4rem;
+    margin-right: 0.2rem;
+  
+  }
+  .N-img {
+    margin-top: 4rem;
+    margin-right: 0.2rem;
+
+}
+
+.heading-title{
+  margin-top: -20rem;
+}
+}
 
 @media (max-width: 320px) {
   .hero-container {
-    min-height:65vh;
+    min-height:100vh;
     display: flex; /* Use Flexbox for layout */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
@@ -222,13 +246,13 @@ h3 span {
     width: 100px; /* Adjust size for small screens */
     height: 100px;
     margin-top: 4rem; /* Move slightly upward */
-    margin-left: 0.8rem; /* Center horizontally */
+    margin-left: 4rem; /* Center horizontally */
     margin-right: auto; /* Center horizontally */
     transform: translateX(-1.1rem); /* Shift slightly to the left */
   }
 
   .N-img {
-     margin-left:0.8rem;
+     margin-left:4rem;
     margin-top: 4rem; /* Move slightly upward */
     text-align: center; /* Ensure the container is centered */
     transform: translateX(-1.1rem); /* Shift slightly to the left */
@@ -250,9 +274,52 @@ h3 span {
     margin-bottom: 2rem; /* Moved slightly up */
     transform: translateX(-6.5rem); /* Shift slightly to the left */
   }
+  .heading-title{
+    margin-top: -20rem;
+  
+  }
 }
 
 
+
+
+
+@media (max-width: 221px) {
+  .hero-container {
+    min-height:100vh;
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 2.5rem;
+    background-size: 50%;
+    background-position: center top; /* Align background to the center top */
+    bottom: -6rem;
+  }
+
+  .para-text{
+    margin-right: 1.5rem;
+  }
+  .heading-title{
+    margin-top: -20rem;
+  
+  }
+
+
+  
+  .N-img img {
+    width: 100px; /* Adjust size for small screens */
+    height: 100px;
+    margin-top: 4rem; /* Move slightly upward */
+    margin-right: 2rem; /* Center horizontally */
+   
+    transform: translateX(-1.1rem); /* Shift slightly to the left */
+  }
+
+  .N-img {
+     margin-right:2rem;
+}
+
+}
 
 
 
