@@ -26,7 +26,7 @@ const Skills = () => {
               <h1>Skills</h1>
               <h2 data-aos="zoom-in-up">Next.js</h2>
               <h2 data-aos="zoom-in-up">TypeScript</h2>
-              <h2 data-aos="zoom-in-up">React.js</h2>
+              <h2 data-aos="zoom-in-up">Python</h2>
             </div>
 
             <div className="skills-space">
