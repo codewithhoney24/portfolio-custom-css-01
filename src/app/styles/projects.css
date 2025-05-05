@@ -7,6 +7,161 @@
   padding: 75px 0;            /* Optional vertical padding */
   min-height: 100vh;          /* Full height of screen */
 }
+.projects-container {
+  display: flex;              /* Flexbox layout */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;        /* Center horizontally */
+  flex-direction: column;     /* Stack vertically */
+  padding: 75px 0;            /* Optional vertical padding */
+  min-height: 100vh;          /* Full height of screen */
+}
+
+
+  
+   .card {
+      
+      margin: auto;
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      padding: 2rem;
+      height: 95%; /* Reduced height slightly from 90% */
+      border-radius: 10px;
+      overflow: hidden; /* Keep animation inside the card border */
+      background-color: rgb(51, 72, 94);
+      text-align: center;
+  }
+  
+  
+
+
+.heading-container{
+   display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Add space between cards */
+     align-items: center; 
+    width: 100%;
+   
+}
+
+.projects-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* Always 3 cards in one row */
+   gap: 2rem; /* Add spacing between cards */
+   width: 100%; /* Ensure the grid takes full container width */
+ }
+ 
+
+
+ .projects-grid-xl {
+    gap:2.5;
+    
+    
+ }
+
+ .projects-grid-md-2 {
+    grid-template-columns: repeat(2 1fr);
+   
+    
+ }
+ .projects-grid-lg-3 {
+    grid-template-columns: repeat(3 1fr);
+ }
+
+ 
+
+
+
+ .button-container {
+
+
+   display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    gap: 1rem; /* Add space between buttons */
+   
+    width: 100%; /* Ensure buttons take up full width */
+    text-align: center
+   
+}
+
+.view-more-btn {
+   gap:10%;
+   width: 80%; /* Make buttons wider */
+    max-width: 300px; /* Limit maximum width */
+    text-align: center; /* Center text inside the button */
+   display: inline-block;
+   padding: 10px 20px;
+   font-size: 1rem;
+   font-weight: bold;
+   color: #fff;
+   background-color: rgb(121, 140, 159); /* Button color */
+   text-decoration: none;
+   border-radius: 5px;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-more-btn:hover {
+   background-color: rgb(45, 65, 81); /* Darker shade on hover */
+   transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.view-more-btn:active {
+   transform: scale(0.95); /* Shrink a bit on click */
+}
+
+
+.card-title{
+   font-size: 1.5rem;
+   font-weight: 400;
+   margin-top: -1rem;
+}
+
+
+
+
+/* For Screens Above 1200px (Large Screens) */
+@media (min-width: 1200px) {
+   .projects-grid {
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusts based on card size */
+     gap: 2rem; /* Add spacing between cards */
+   }
+ }
+
+
+/* For Screens Below 768px */
+@media (max-width: 768px) {
+   .projects-grid {
+      
+         grid-template-columns: 1fr; /* One card per row */
+         gap: 2rem; /* Add more spacing for smaller screens */
+       }
+       .card-title{
+         font-size: 1rem;
+         font-weight: 200;
+         margin-top: -1rem;
+      }
+      
+   }
+ 
+ 
+ /* For Screens Below 480px */
+ @media (max-width: 480px) {
+   .projects-grid {
+     grid-template-columns: 1fr; /* One card per row */
+     gap: 2rem; /* Add more spacing for smaller screens */
+   }
+    .card-title{
+         font-size: 1rem;
+         font-weight: 200;
+         margin-top: -1rem;
+      }
+      .heading-title{
+         font-size: 1.5rem;
+         font-weight: 400;
+         margin-top: -1rem;
+      }
+ }
 
 
   
