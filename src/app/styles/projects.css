@@ -3,7 +3,7 @@
    
    display: flex; /* Use Flexbox for centering */
   justify-content: center; /* Center horizontally */
-  align-items: top; 
+  align-items: 8rem; 
   flex-direction: column; /* Stack items if needed */
   
   min-height: 100vh;
