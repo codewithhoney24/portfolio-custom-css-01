@@ -5,7 +5,7 @@
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   flex-direction: column; /* Stack items if needed */
-  padding: 75px;
+  
   min-height: 100vh;
 
 }
