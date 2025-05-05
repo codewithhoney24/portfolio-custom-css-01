@@ -1,13 +1,11 @@
 
-.projects-container{
-   
-   display: flex; /* Use Flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; 
-  flex-direction: column; /* Stack items if needed */
-  
-  min-height: 90vh;
-
+.projects-container {
+  display: flex;              /* Flexbox layout */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;        /* Center horizontally */
+  flex-direction: column;     /* Stack vertically */
+  padding: 75px 0;            /* Optional vertical padding */
+  min-height: 100vh;          /* Full height of screen */
 }
 
 
