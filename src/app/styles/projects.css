@@ -5,7 +5,8 @@
   flex-direction: column;       
   height: auto;                 
   min-height: auto;             
-   margin-top: -20;            
+   margin-top: 0;
+   position: relative;
 }
 
 .card {
