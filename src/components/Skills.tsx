@@ -8,15 +8,11 @@ const Skills = () => {
         <div data-aos="zoom-in-up" className="skills-left">
           <h2 className="skills-heading">Technologies </h2>
           <p className="skills-text">
-            Frontend Technologies: I work with HTML, CSS, JavaScript ,typeScript
-            and Next.Js to build visually engaging and interactive web pages,
-            using frameworks like React and Vue.js to create dynamic user
-            interfaces. Backend Technologies: I develop server-side applications
-            using Node.js and Express, integrating databases like MongoDB to
-            manage data and ensure efficient operations. Version Control &
-            Deployment: I use Git for version control and platforms like GitHub
-            for collaboration, deploying applications using tools like Docker
-            and vercel pipelines for seamless delivery.
+           Frontend Technologies: I work with HTML, CSS, JavaScript, TypeScript, and Next.js to build visually engaging and interactive web pages, using frameworks like React.js to create dynamic user interfaces.
+Backend Technologies: I develop server-side applications using Node.js and Python, integrating databases like MongoDB to manage data and ensure efficient operations.
+Version Control & Deployment: I use Git for version control and platforms like GitHub for collaboration, deploying applications using tools like Streamlit, Chainlit, and Vercel pipelines for seamless delivery.
+
+
           </p>
         </div>
 
