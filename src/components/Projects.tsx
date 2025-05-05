@@ -48,7 +48,7 @@ const Projects = () => {
   return (
     <div id='projects' className='projects-container'>
       <Heading  title="My Projects"    />
-      <div className='projects-grid  projects-grid-xl  projects-grids-md-2  projects-grid-lg-3 projects-center'>
+      <div className='projects-grid  projects-grid-xl  projects-grids-md-2  projects-grid-lg-3 projects-top'>
         {data.map((el) => (
           <Card
             key={el.id}
