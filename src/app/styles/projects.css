@@ -3,7 +3,7 @@
    
    display: flex; /* Use Flexbox for centering */
   justify-content: center; /* Center horizontally */
-  align-items: 8rem; 
+  align-items: top; 
   flex-direction: column; /* Stack items if needed */
   
   min-height: 100vh;
@@ -13,6 +13,7 @@
 
   
    .card {
+      align-items: top; 
       margin: auto;
       position: relative;
       width: 100%;
