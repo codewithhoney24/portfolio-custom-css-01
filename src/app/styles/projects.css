@@ -1,10 +1,11 @@
 .projects-container {
-  display: flex;                /* Use Flexbox layout */
-  justify-content: flex-start;  /* Align items to the top */
-  align-items: flex-start;      /* Align items to the start (top) horizontally */
-  flex-direction: column;       /* Stack vertically */
-  height: auto;                 /* Let content adjust based on height */
-  min-height: auto;             /* Remove 100vh to avoid pushing content down */
+  display: flex;                
+  justify-content: flex-start;  
+  align-items: flex-start;      
+  flex-direction: column;       
+  height: auto;                 
+  min-height: auto;             
+   margin-top: 0;            
 }
 
 .card {
