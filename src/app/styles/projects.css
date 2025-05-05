@@ -32,7 +32,7 @@
    display: flex; /* Use flexbox for layout */
     flex-direction: column; /* Stack items vertically */
     gap: 2rem; /* Add space between cards */
-    align-items: center; /* Center cards horizontally */
+     align-items: top; 
     width: 100%;
    
 }
